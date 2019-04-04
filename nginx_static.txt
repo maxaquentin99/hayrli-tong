@@ -1,0 +1,13 @@
+server {
+       listen 80;
+       listen [::]:80;
+
+       server_name xayrlitong.uz;
+
+       root /home/max/hayrli-tong;
+       index index.html;
+
+       location / {
+               try_files $uri $uri/ =404;
+       }
+}
